@@ -6,7 +6,7 @@ function uploadImages(e) {
     const data = new FormData(form);
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:8080/gallery/upload', true);
+    xhr.open('POST', 'https://api.dsciwedding.com/gallery/upload', true);
 
     xhr.onload = function() {
         if (xhr.status === 200) {
