@@ -1,5 +1,15 @@
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 function uploadImages(e) {
     alert("please wait")
+
+    // show loader
+    document.querySelector(".loader").classList.remove("hidden");
+
+    // block form submit
     e.preventDefault();
 
     const form = document.getElementById('uploadForm');
@@ -9,6 +19,9 @@ function uploadImages(e) {
     xhr.open('POST', 'https://api.dsciwedding.com/gallery/upload', true);
 
     xhr.onload = function() {
+        // hide loader
+        document.querySelector(".loader").className += " hidden";
+        
         if (xhr.status === 200) {
             // Upload successful
             j = JSON.parse(xhr.response);
@@ -64,12 +77,13 @@ function uploadImages(e) {
                 $("#afterparty-failed").slideDown();
             }
 
-
-
             setTimeout(function() {
                 $("#ceremony-success").slideUp("slow");
                 $("#reception-success").slideUp("slow");
                 $("#afterparty-success").slideUp("slow");
+                $("#ceremony-failed").slideUp("slow");
+                $("#reception-failed").slideUp("slow");
+                $("#afterparty-failed").slideUp("slow");
                 document.querySelector('#ceremonyFile').value = '';
                 document.querySelector('#receptionFile').value = '';
                 document.querySelector('#afterPartyFile').value = '';
@@ -81,9 +95,13 @@ function uploadImages(e) {
         }
     };
 
-    xhr.onerror = function() {
-        // Network errors
-        console.error('Network error during upload');
+    xhr.onerror = function(e) {
+        // show loader
+        document.querySelector(".loader").className += " hidden";
+
+        j = JSON.parse(e);
+        
+        alert(e.message);
     };
 
     xhr.send(data);

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <img src="img/Preloader_2.gif" alt="Loading..." />
+    </div>
     <div class="container" style="margin-top: 5%;">
         <div class="row">
             <div class="col-12">
@@ -23,7 +26,7 @@
             <div class="col-12">
                 <div class="mb-3">
                     <label for="ceremonyFile" class="form-label">Ceremony</label>
-                    <input class="form-control" type="file" name="ceremony[]" id="ceremonyFile" multiple>
+                    <input class="form-control" type="file" name="ceremony[]" id="ceremonyFile" accept="image/*" multiple>
                     <div class="col-md-12 mt-3">
                         <div id="ceremony-success">
                             <h6>Success</h6>
@@ -39,7 +42,7 @@
             <div class="col-12">
                 <div class="mb-3">
                     <label for="receptionFile" class="form-label">Reception</label>
-                    <input class="form-control" type="file" name="reception[]" id="receptionFile" multiple>
+                    <input class="form-control" type="file" name="reception[]" id="receptionFile" accept="image/*" multiple>
                     <div class="col-md-12 mt-3">
                         <div id="reception-success">
                             <h6>Success</h6>
@@ -55,7 +58,7 @@
             <div class="col-12">
                 <div class="mb-3">
                     <label for="afterPartyFile" class="form-label">After Party</label>
-                    <input class="form-control" type="file" name="afterparty[]" id="afterPartyFile" multiple>
+                    <input class="form-control" type="file" name="afterparty[]" id="afterPartyFile" accept="image/*" multiple>
                     <div class="col-md-12 mt-3">
                         <div id="afterparty-success">
                             <h6>Success</h6>
