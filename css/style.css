@@ -42,3 +42,12 @@ body {
     color: #000;
     background-color: #F1D3CA;
 }
+
+#ceremony-success,
+#ceremony-failed,
+#reception-success,
+#reception-failed,
+#afterparty-success,
+#afterparty-failed {
+    display: none;
+}
