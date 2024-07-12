@@ -1,5 +1,5 @@
 function uploadImages(e) {
-
+    alert("please wait")
     e.preventDefault();
 
     const form = document.getElementById('uploadForm');
