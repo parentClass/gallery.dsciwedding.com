@@ -27,16 +27,16 @@ function uploadImages(e) {
             j = JSON.parse(xhr.response);
 
             // ceremony
-            if(j.success.length > 0) {
-                j.ceremony.success.map(element => {
+            if(j.wedding.success.length > 0) {
+                j.wedding.success.map(element => {
                     $("#wedding-success-list").append('<li>' + element + '</li>')
                 })
 
                 $("#wedding-success").slideDown();
             }
 
-            if(j.failed.length > 0) {
-                j.ceremony.failed.map(element => {
+            if(j.wedding.failed.length > 0) {
+                j.wedding.failed.map(element => {
                     $("#wedding-failed-list").append('<li>' + element + '</li>')
                 })
                 
