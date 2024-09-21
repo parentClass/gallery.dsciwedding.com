@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 });
 
 function uploadImages(e) {
-    alert("please wait")
+    alert("Thank you for sharing your photo!")
 
     // show loader
     document.querySelector(".loader").classList.remove("hidden");
