@@ -43,24 +43,16 @@ body {
     background-color: #F1D3CA;
 }
 
-#ceremony-success,
-#ceremony-failed,
-#reception-success,
-#reception-failed,
-#afterparty-success,
-#afterparty-failed {
+#wedding-success,
+#wedding-failed {
     display: none;
 }
 
-#ceremony-success,
-#reception-success,
-#afterparty-success {
+#wedding-success {
     color: #4BB543;
 }
 
-#ceremony-failed,
-#reception-failed,
-#afterparty-failed {
+#wedding-failed {
     color: #ff0033;
 }
 

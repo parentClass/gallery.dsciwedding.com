@@ -25,48 +25,16 @@
         <form class="row" onsubmit="uploadImages(event)" method="post" id="uploadForm" enctype="multipart/form-data">
             <div class="col-12">
                 <div class="mb-3">
-                    <label for="ceremonyFile" class="form-label">Ceremony</label>
-                    <input class="form-control" type="file" name="ceremony[]" id="ceremonyFile" accept="image/*" multiple>
+                    <label for="weddingFile" class="form-label">Wedding</label>
+                    <input class="form-control" type="file" name="wedding[]" id="weddingFile" accept="image/*" multiple>
                     <div class="col-md-12 mt-3">
-                        <div id="ceremony-success">
+                        <div id="wedding-success">
                             <h6>Success</h6>
-                            <ul id="ceremony-success-list"></ul>
+                            <ul id="wedding-success-list"></ul>
                         </div>
-                        <div id="ceremony-failed">
+                        <div id="wedding-failed">
                             <h6>Failed</h6>
-                            <ul id="ceremony-failed-list"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="mb-3">
-                    <label for="receptionFile" class="form-label">Reception</label>
-                    <input class="form-control" type="file" name="reception[]" id="receptionFile" accept="image/*" multiple>
-                    <div class="col-md-12 mt-3">
-                        <div id="reception-success">
-                            <h6>Success</h6>
-                            <ul id="reception-success-list"></ul>
-                        </div>
-                        <div id="reception-failed">
-                            <h6>Failed</h6>
-                            <ul id="reception-failed-list"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="mb-3">
-                    <label for="afterPartyFile" class="form-label">After Party</label>
-                    <input class="form-control" type="file" name="afterparty[]" id="afterPartyFile" accept="image/*" multiple>
-                    <div class="col-md-12 mt-3">
-                        <div id="afterparty-success">
-                            <h6>Success</h6>
-                            <ul id="afterparty-success-list"></ul>
-                        </div>
-                        <div id="afterparty-failed">
-                            <h6>Failed</h6>
-                            <ul id="afterparty-failed-list"></ul>
+                            <ul id="wedding-failed-list"></ul>
                         </div>
                     </div>
                 </div>
